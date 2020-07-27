@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Quantico</title>
@@ -10,20 +11,26 @@
     <link rel="stylesheet" href="./assets/css/ed-grid.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.css') }}">
 </head>
 
 <body>
 <navbar class="navbar">
     <div class="ed-container">
-        <div class="ed-item ed-container s-main-end">
-            <ul class="nav">
-                <li class="nav-item"><a href="#">3 Razones</a></li>
-                <li class="nav-item"><a href="#">Autor</a></li>
-                <li class="nav-item"><a href="#">Comentarios</a></li>
-                <li class="nav-item"><a href="#">Beneficios</a></li>
-                <li class="nav-item button-cta"><a href="#" id="buyButton">Comprar</a></li>
-            </ul>
+        <div class="ed-item s-20 to-l nav-toggle-cont">
+            <div class="nav-toggle" id="main-nav-toggle"></div>
+        </div>
+        <div class="ed-item s-100 nav-container s-main-end">
+            <nav class="main-nav ed-nav l-top" id="main-nav">
+                <ul class="nav ed-menu l-horizontal button-bar" id="main-menu">
+                    <li class="nav-item"><a href="#">3 Razones</a></li>
+                    <li class="nav-item"><a href="#">Autor</a></li>
+                    <li class="nav-item"><a href="#">Comentarios</a></li>
+                    <li class="nav-item"><a href="#">Beneficios</a></li>
+                    <li class="nav-item button-cta"><a href="#" id="buyButton">Comprar</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </navbar>
@@ -46,7 +53,7 @@
 <main class="main">
     <section class="section">
         <div class="ed-container">
-            <div class="ed-item m-b-4">
+            <div class="ed-item s-100 m-b-4">
                 <h2 class="heading-2 text-center m-0">
                     <strong class="strong">3 RAZONES</strong>
                 </h2>
@@ -60,7 +67,9 @@
                     </div>
                 </div>
             </div>
-            <div class="ed-item">
+        </div>
+        <div class="ed-container">
+            <div class="ed-item s-100 l-1-3 m-b-4">
                 <div class="reasons">
                     <div class="reason s-to-center s-center">
                         <img src="./assets/images/ico1.jpg" class="icon1 m-b-1">
@@ -70,6 +79,10 @@
                             mecanismo.
                         </p>
                     </div>
+                </div>
+            </div>
+            <div class="ed-item s-100 l-1-3 m-b-4">
+                <div class="reasons">
                     <div class="reason s-to-center s-center">
                         <img src="./assets/images/ico2.jpg" class="icon2 m-b-1">
                         <h5 class="heading-5 strong">Lo que perdiste por lo que no te dijeron.</h5>
@@ -79,6 +92,10 @@
                             fracaso de tu empresa.
                         </p>
                     </div>
+                </div>
+            </div>
+            <div class="ed-item s-100 l-1-3 m-b-4">
+                <div class="reasons">
                     <div class="reason s-to-center s-center">
                         <img src="./assets/images/ico3.jpg" class="icon3 m-b-1">
                         <h5 class="heading-5 strong">Lo que te cuesta lo que te dicen y lo que no.</h5>
@@ -93,12 +110,10 @@
     </section>
     <section class="section book">
         <div class="ed-container">
-            <div class="ed-item s-5"></div>
-            <div class="ed-item s-45">
+            <div class="ed-item s-100 m-50 m-b-3">
                 <img src="./assets/images/libro2.jpg" alt="" class="image">
             </div>
-            <div class="ed-item s-10"></div>
-            <div class="ed-item ed-container s-35 s-main-center s-cross-center">
+            <div class="ed-item s-100 m-50 s-main-center s-cross-center">
                 <h3 class="heading-3 m-b-2 text-center">DOMINANDO EL SISTEMA</h3>
                 <p class="text-center muted">
                     Es el inicio de tu gran aventura financiera, reúne los conceptos básicos para garantizar tus resultados y
@@ -109,87 +124,85 @@
         </div>
     </section>
     <section class="section why">
+        <div class="ed-container s-main-center">
+            <div class="ed-item s-100 m-b-4">
+                <h2 class="heading-2 strong text-center m-b-3">
+                    ¿Por qué comprar
+                    <br>
+                    <span class="uppercase stronger">DOMINANDO EL SISTEMA?</span>
+                </h2>
+                <p class="muted s-center m-b-4">
+                    Porque no solo compras solo un libro, compras una gran cantidad de beneficios quánticos y también la
+                    oportunidad de ser parte de una comunidad que obtiene resultados todos los días.
+                </p>
+            </div>
+        </div>
         <div class="ed-container">
-            <div class="ed-item s-10"></div>
-            <div class="ed-item s-80">
-                <div class="ed-item ed-container s-main-center">
-                    <h2 class="heading-2 strong text-center m-b-3">
-                        ¿Por qué comprar
-                        <br>
-                        <span class="uppercase stronger">DOMINANDO EL SISTEMA?</span>
-                    </h2>
-                    <p class="muted s-center m-b-4">
-                        Porque no solo compras solo un libro, compras una gran cantidad de beneficios quánticos y también la
-                        oportunidad de ser parte de una comunidad que obtiene resultados todos los días.
-                    </p>
+            <div class="ed-item ed-container features">
+                <div class="ed-item ed-container feature m-b-2">
+                    <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
+                        <img src="./assets/images/ico4.jpg" class="image">
+                    </div>
+                    <div class="ed-item s-100 m-50 l-70 s-cross-center">
+                        <p class="muted">
+                            <img src="./assets/images/check.jpg" class="check">
+                            Recibe el contenido de valor que abrirá nuevas ideas en tus finanzas. Y ahorra más de S/. 7000.00 en
+                            capacitaciones.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="ed-item ed-container features">
-                    <div class="ed-item ed-container feature m-b-2">
-                        <div class="ed-item s-30 s-main-center s-cross-center">
-                            <img src="./assets/images/ico4.jpg" class="image">
-                        </div>
-                        <div class="ed-item s-70 s-cross-center">
-                            <p class="muted">
-                                <img src="./assets/images/check.jpg" class="check">
-                                Recibe el contenido de valor que abrirá nuevas ideas en tus finanzas. Y ahorra más de S/. 7000.00 en
-                                capacitaciones.
-                            </p>
-                        </div>
+                <div class="ed-item ed-container feature m-b-2">
+                    <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
+                        <img src="./assets/images/ico5.jpg" class="image">
                     </div>
-                    <div class="ed-item ed-container feature m-b-2">
-                        <div class="ed-item s-30 s-main-center s-cross-center">
-                            <img src="./assets/images/ico5.jpg" class="image">
-                        </div>
-                        <div class="ed-item s-70 s-cross-center">
-                            <p class="muted">
-                                <img src="./assets/images/check.jpg" class="check">
-                                Recibe herramientas cognitivas para conocer a fondo el sistema, sé parte del sistema de una manera
-                                inteligente y haz que él trabaje para ti.
-                            </p>
-                        </div>
+                    <div class="ed-item s-100 m-50 l-70 s-cross-center">
+                        <p class="muted">
+                            <img src="./assets/images/check.jpg" class="check">
+                            Recibe herramientas cognitivas para conocer a fondo el sistema, sé parte del sistema de una manera
+                            inteligente y haz que él trabaje para ti.
+                        </p>
                     </div>
-                    <div class="ed-item ed-container feature m-b-2">
-                        <div class="ed-item s-30 s-main-center s-cross-center">
-                            <img src="./assets/images/ico6.jpg" class="image">
-                        </div>
-                        <div class="ed-item s-70 s-cross-center">
-                            <p class="muted">
-                                <img src="./assets/images/check.jpg" class="check">
-                                Consigue que las finanzas apliquen a tu negocio, no importa que si es tradicional o innovador, el
-                                capital inicial es necesario para cualquier emprendimiento.
-                            </p>
-                        </div>
+                </div>
+                <div class="ed-item ed-container feature m-b-2">
+                    <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
+                        <img src="./assets/images/ico6.jpg" class="image">
                     </div>
-                    <div class="ed-item ed-container feature m-b-2">
-                        <div class="ed-item s-30 s-main-center s-cross-center">
-                            <img src="./assets/images/ico7.jpg" class="image">
-                        </div>
-                        <div class="ed-item s-70 s-cross-center">
-                            <p class="muted">
-                                <img src="./assets/images/check.jpg" class="check">
-                                Únete a la comunidad quantico formada por miles de empresarios y emprendedores que no se conforman con
-                                las finanzas tradicionales y entre ellos logran
-                            </p>
-                        </div>
+                    <div class="ed-item s-100 m-50 l-70 s-cross-center">
+                        <p class="muted">
+                            <img src="./assets/images/check.jpg" class="check">
+                            Consigue que las finanzas apliquen a tu negocio, no importa que si es tradicional o innovador, el
+                            capital inicial es necesario para cualquier emprendimiento.
+                        </p>
+                    </div>
+                </div>
+                <div class="ed-item ed-container feature m-b-2">
+                    <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
+                        <img src="./assets/images/ico7.jpg" class="image">
+                    </div>
+                    <div class="ed-item s-100 m-50 l-70 s-cross-center">
+                        <p class="muted">
+                            <img src="./assets/images/check.jpg" class="check">
+                            Únete a la comunidad quantico formada por miles de empresarios y emprendedores que no se conforman con
+                            las finanzas tradicionales y entre ellos logran
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="ed-item s-10"></div>
         </div>
     </section>
     <section class="section author">
         <div class="ed-container">
-            <div class="ed-item s-center full m-b-4">
+            <div class="ed-item s-100 s-center m-b-4">
                 <h2 class="heading-2 text-center stronger">
                     EL AUTOR QUANTICO
                 </h2>
             </div>
-            <div class="ed-item m-40">
+        </div>
+        <div class="ed-container">
+            <div class="ed-item s-100 m-50 m-b-4">
                 <img src="./assets/images/autor1.jpg" alt="Jose Manuel Quantico" class="image">
             </div>
-            <div class="ed-item m-10"></div>
-            <div class="ed-item m-40 s-main-center s-cross-center">
+            <div class="ed-item s-100 m-50 s-main-center s-cross-center">
                 <img src="./assets/images/name.png" alt="José Manuel Quantico" class="name m-b-3">
                 <p class="muted small strong text-center">“Me he dedicado los últimos años a enseñar a tener resultados a
                     miles de
@@ -199,98 +212,97 @@
                     comunidad debes conocer como dominar el sistema.
                 </p>
             </div>
-            <div class="ed-item m-10"></div>
         </div>
     </section>
     <section class="section community">
         <div class="ed-container">
-            <div class="ed-item full m-b-4">
+            <div class="ed-item s-100 m-b-4">
                 <h2 class="heading-2 strong text-center">Lo que dice la comunidad quantica</h2>
             </div>
+        </div>
+        <div class="ed-container">
             <div class="ed-item ed-container full m-t-2">
                 <div class="ed-item s-5 s-main-center s-cross-center">
                     <img src="./assets/images/before.png" class="before">
                 </div>
-                <div class="ed-item s-90">
-                    <div class="carrousel-container">
-                        <div class="carrousel">
-                            <div class="carrousel-item">
-                                <div class="ed-container">
-                                    <div class="ed-item s-30">
-                                        <div class="carrouse-item__image">
-                                            <img src="./assets/images/img1.png" alt="">
-                                        </div>
+                <div class="ed-item s-100">
+                    <div class="ed-container owl-carousel">
+                        <div class="carrousel-item">
+                            <div class="ed-container">
+                                <div class="ed-item s-100 m-30">
+                                    <div class="carrouse-item__image">
+                                        <img src="./assets/images/img1.png" alt="">
                                     </div>
-                                    <div class="ed-item s-70">
-                                        <div class="carrousel-item__quote">
-                                            <p class="text-right">
-                                                El conocimiento quantico debería masificarse, la educación corrrecta que permite el
-                                                crecimiento
-                                                personal y el desarrollo empresarial. “
-                                            </p>
-                                            <p class="text-right strong m-b-0">Renzo Salas</p>
-                                            <p class="text-right strong m-b-0">Empresario</p>
-                                        </div>
+                                </div>
+                                <div class="ed-item s-100 m-70">
+                                    <div class="carrousel-item__quote">
+                                        <p class="text-right">
+                                            El conocimiento quantico debería masificarse, la educación corrrecta que permite el
+                                            crecimiento
+                                            personal y el desarrollo empresarial. “
+                                        </p>
+                                        <p class="text-right strong m-b-0">Renzo Salas</p>
+                                        <p class="text-right strong m-b-0">Empresario</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carrousel-item">
-                                <div class="ed-container">
-                                    <div class="ed-item s-30">
-                                        <div class="carrouse-item__image">
-                                            <img src="./assets/images/img1.png" alt="">
-                                        </div>
+                        </div>
+                        <div class="carrousel-item">
+                            <div class="ed-container">
+                                <div class="ed-item s-100 m-30">
+                                    <div class="carrouse-item__image">
+                                        <img src="./assets/images/img1.png" alt="">
                                     </div>
-                                    <div class="ed-item s-70">
-                                        <div class="carrousel-item__quote">
-                                            <p class="text-right">
-                                                El conocimiento quantico debería masificarse, la educación corrrecta que permite el
-                                                crecimiento
-                                                personal y el desarrollo empresarial. “
-                                            </p>
-                                            <p class="text-right strong m-b-0">Renzo Salas</p>
-                                            <p class="text-right strong m-b-0">Empresario</p>
-                                        </div>
+                                </div>
+                                <div class="ed-item s-100 m-70">
+                                    <div class="carrousel-item__quote">
+                                        <p class="text-right">
+                                            El conocimiento quantico debería masificarse, la educación corrrecta que permite el
+                                            crecimiento
+                                            personal y el desarrollo empresarial. “
+                                        </p>
+                                        <p class="text-right strong m-b-0">Renzo Salas</p>
+                                        <p class="text-right strong m-b-0">Empresario</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carrousel-item">
-                                <div class="ed-container">
-                                    <div class="ed-item s-30">
-                                        <div class="carrouse-item__image">
-                                            <img src="./assets/images/img1.png" alt="">
-                                        </div>
+                        </div>
+                        <div class="carrousel-item">
+                            <div class="ed-container">
+                                <div class="ed-item s-100 m-30">
+                                    <div class="carrouse-item__image">
+                                        <img src="./assets/images/img1.png" alt="">
                                     </div>
-                                    <div class="ed-item s-70">
-                                        <div class="carrousel-item__quote">
-                                            <p class="text-right">
-                                                El conocimiento quantico debería masificarse, la educación corrrecta que permite el
-                                                crecimiento
-                                                personal y el desarrollo empresarial. “
-                                            </p>
-                                            <p class="text-right strong m-b-0">Renzo Salas</p>
-                                            <p class="text-right strong m-b-0">Empresario</p>
-                                        </div>
+                                </div>
+                                <div class="ed-item s-100 m-70">
+                                    <div class="carrousel-item__quote">
+                                        <p class="text-right">
+                                            El conocimiento quantico debería masificarse, la educación corrrecta que permite el
+                                            crecimiento
+                                            personal y el desarrollo empresarial. “
+                                        </p>
+                                        <p class="text-right strong m-b-0">Renzo Salas</p>
+                                        <p class="text-right strong m-b-0">Empresario</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carrousel-item">
-                                <div class="ed-container">
-                                    <div class="ed-item s-30">
-                                        <div class="carrouse-item__image">
-                                            <img src="./assets/images/img1.png" alt="">
-                                        </div>
+                        </div>
+                        <div class="carrousel-item">
+                            <div class="ed-container">
+                                <div class="ed-item s-100 m-30">
+                                    <div class="carrouse-item__image">
+                                        <img src="./assets/images/img1.png" alt="">
                                     </div>
-                                    <div class="ed-item s-70">
-                                        <div class="carrousel-item__quote">
-                                            <p class="text-right">
-                                                El conocimiento quantico debería masificarse, la educación corrrecta que permite el
-                                                crecimiento
-                                                personal y el desarrollo empresarial. “
-                                            </p>
-                                            <p class="text-right strong m-b-0">Renzo Salas</p>
-                                            <p class="text-right strong m-b-0">Empresario</p>
-                                        </div>
+                                </div>
+                                <div class="ed-item s-100 m-70">
+                                    <div class="carrousel-item__quote">
+                                        <p class="text-right">
+                                            El conocimiento quantico debería masificarse, la educación corrrecta que permite el
+                                            crecimiento
+                                            personal y el desarrollo empresarial. “
+                                        </p>
+                                        <p class="text-right strong m-b-0">Renzo Salas</p>
+                                        <p class="text-right strong m-b-0">Empresario</p>
                                     </div>
                                 </div>
                             </div>
@@ -348,8 +360,28 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://checkout.culqi.com/js/v3"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/js/ed-grid.js') }}"></script>
 <!--<script src="assets/js/token.js"></script>-->
-
+<script>
+    edgrid.menu('main-nav','main-menu');
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2
+            }
+        }
+    })
+</script>
 <script>
     Culqi.publicKey = '{{$key_public}}';
     Culqi.settings({
