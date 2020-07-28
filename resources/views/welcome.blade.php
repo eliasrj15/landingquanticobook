@@ -119,7 +119,7 @@
                     Es el inicio de tu gran aventura financiera, reúne los conceptos básicos para garantizar tus resultados y
                     lograr rentabilidades increíbles.
                 </p>
-                <button class="button button-primary strong">Comprar</button>
+                <button class="button button-primary strong" onclick="pasarella()">Comprar</button>
             </div>
         </div>
     </section>
@@ -231,7 +231,7 @@
                             <div class="ed-container">
                                 <div class="ed-item s-100 m-30">
                                     <div class="carrouse-item__image">
-                                        <img src="./assets/images/img1.png" alt="">
+                                        <img src="./assets/images/1.png" alt="">
                                     </div>
                                 </div>
                                 <div class="ed-item s-100 m-70">
@@ -241,7 +241,45 @@
                                             crecimiento
                                             personal y el desarrollo empresarial. “
                                         </p>
-                                        <p class="text-right strong m-b-0">Renzo Salas</p>
+                                        <p class="text-right strong m-b-0">José Alvarado</p>
+                                        <p class="text-right strong m-b-0">Emprendedor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrousel-item">
+                            <div class="ed-container">
+                                <div class="ed-item s-100 m-30">
+                                    <div class="carrouse-item__image">
+                                        <img src="./assets/images/2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="ed-item s-100 m-70">
+                                    <div class="carrousel-item__quote">
+                                        <p class="text-right">
+                                            Las reglas no estan escritas, estas se escriben todos los días y en
+                                            la comunidad quántica lo sabemos.“
+                                        </p>
+                                        <p class="text-right strong m-b-0">Daniel Álvarez</p>
+                                        <p class="text-right strong m-b-0">Desarrollador</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrousel-item">
+                            <div class="ed-container">
+                                <div class="ed-item s-100 m-30">
+                                    <div class="carrouse-item__image">
+                                        <img src="./assets/images/3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="ed-item s-100 m-70">
+                                    <div class="carrousel-item__quote">
+                                        <p class="text-right">
+                                            La creatividad empresarial no sirve de nada sin el capital de trabajo, por
+                                            eso nos apalancamos en el conocimiento quántico“
+                                        </p>
+                                        <p class="text-right strong m-b-0">José Melendez</p>
                                         <p class="text-right strong m-b-0">Empresario</p>
                                     </div>
                                 </div>
@@ -251,58 +289,17 @@
                             <div class="ed-container">
                                 <div class="ed-item s-100 m-30">
                                     <div class="carrouse-item__image">
-                                        <img src="./assets/images/img1.png" alt="">
+                                        <img src="./assets/images/4.png" alt="">
                                     </div>
                                 </div>
                                 <div class="ed-item s-100 m-70">
                                     <div class="carrousel-item__quote">
                                         <p class="text-right">
-                                            El conocimiento quantico debería masificarse, la educación corrrecta que permite el
-                                            crecimiento
-                                            personal y el desarrollo empresarial. “
+                                            El desarrollo sostenido de una país, no depende del gobierno, depende de
+                                            los emprendedores y de los emprendimientos valientes“
                                         </p>
-                                        <p class="text-right strong m-b-0">Renzo Salas</p>
-                                        <p class="text-right strong m-b-0">Empresario</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carrousel-item">
-                            <div class="ed-container">
-                                <div class="ed-item s-100 m-30">
-                                    <div class="carrouse-item__image">
-                                        <img src="./assets/images/img1.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="ed-item s-100 m-70">
-                                    <div class="carrousel-item__quote">
-                                        <p class="text-right">
-                                            El conocimiento quantico debería masificarse, la educación corrrecta que permite el
-                                            crecimiento
-                                            personal y el desarrollo empresarial. “
-                                        </p>
-                                        <p class="text-right strong m-b-0">Renzo Salas</p>
-                                        <p class="text-right strong m-b-0">Empresario</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carrousel-item">
-                            <div class="ed-container">
-                                <div class="ed-item s-100 m-30">
-                                    <div class="carrouse-item__image">
-                                        <img src="./assets/images/img1.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="ed-item s-100 m-70">
-                                    <div class="carrousel-item__quote">
-                                        <p class="text-right">
-                                            El conocimiento quantico debería masificarse, la educación corrrecta que permite el
-                                            crecimiento
-                                            personal y el desarrollo empresarial. “
-                                        </p>
-                                        <p class="text-right strong m-b-0">Renzo Salas</p>
-                                        <p class="text-right strong m-b-0">Empresario</p>
+                                        <p class="text-right strong m-b-0">Anelsi Sánchez</p>
+                                        <p class="text-right strong m-b-0">Diseñador</p>
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +341,7 @@
                 <div class="vip-content">
                     <div class="ed-container">
                         <div class="ed-item s-1-3"></div>
-                        <div class="ed-item s-1-3">
+                        <div class="ed-item s-1-3" onclick="pasarella()">
                             <img src="./assets/images/vip.png" alt="Vip">
                         </div>
                         <div class="ed-item s-1-3"></div>
@@ -390,6 +387,11 @@
         description: '{{$datos["product"]}}',
         amount: '{{$datos["amount"]}}'
     });
+
+    function pasarella(){
+        Culqi.open();
+        //e.preventDefault();
+    }
 
     $('#buyButton').on('click', function(e) {
         // Abre el formulario con la configuración en Culqi.settings

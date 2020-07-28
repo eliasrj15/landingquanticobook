@@ -13,10 +13,10 @@ class HomeController extends Controller
 
         $key_public = "pk_live_37CG47QVwOQP8Pk9";
         $datos =[
-            "company" =>"Mundo Quántico",
+            "company" =>"Mundo Quantico",
             "currency" => "PEN",
-            "product" => "Book - Dominando el Sistema",
-            "amount" => "300"
+            "product" => "Libro - Dominando el Sistema",
+            "amount" => "99900"
         ];
         return view ('welcome', compact('key_public', 'datos'));
     }
@@ -30,19 +30,19 @@ class HomeController extends Controller
 
             $charge = $culqi->Charges->create(
                 array(
-                    "amount" => 300,
+                    "amount" => 99900,
                     "capture" => true,
                     "currency_code" => "PEN",
-                    "description" => "Book - Dominando el Sistema",
+                    "description" => "Libro - Dominando el Sistema",
                     "email" => $request->email,
                     "installments" => 0,
                     "antifraud_details" => array(
-                        "address" => "Av. Lima 123",
+                        "address" => "Jr. Manuel del Pino N° 571 - Lince, Lima",
                         "address_city" => "LIMA",
                         "country_code" => "PE",
-                        "first_name" => "Will",
-                        "last_name" => "Muro",
-                        "phone_number" => "9889678986",
+                        "first_name" => "Jose Manuel",
+                        "last_name" => "Carbajal Umpiri",
+                        "phone_number" => "999999999",
                     ),
                     "source_id" => $request->token
                 )
