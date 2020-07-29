@@ -244,9 +244,6 @@
         </div>
         <div class="ed-container">
             <div class="ed-item ed-container full m-t-2">
-                <div class="ed-item s-5 s-main-center s-cross-center">
-                    <img src="./assets/images/before.png" class="before">
-                </div>
                 <div class="ed-item s-100">
                     <div class="ed-container owl-carousel">
                         <div class="carrousel-item">
@@ -263,7 +260,7 @@
                                             crecimiento
                                             personal y el desarrollo empresarial. “
                                         </p>
-                                        <p class="text-right strong m-b-0">José Alvarado</p>
+                                        <p class="text-right strong m-b-0">Frank Torres</p>
                                         <p class="text-right strong m-b-0">Emprendedor</p>
                                     </div>
                                 </div>
@@ -327,9 +324,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ed-item s-5 s-main-center s-cross-center">
-                    <img src="./assets/images/next.png" class="next">
                 </div>
             </div>
         </div>
