@@ -5,7 +5,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Quantico</title>
+    <title>Libro Quantico</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/ed-grid.min.css">
@@ -97,7 +97,7 @@
                         <img src="./assets/images/ico1.jpg" class="icon1 m-b-1">
                         <h5 class="heading-5 strong">Lo que te dijeron y te lo creíste.</h5>
                         <p class="muted">
-                            El sistema educativo tradicional fue creado para sigas las reglas, y para que seas una engranaje más del
+                            El sistema educativo tradicional fue creado para que sigas las reglas, y para que seas un engranaje más del
                             mecanismo.
                         </p>
                     </div>
@@ -122,7 +122,7 @@
                         <img src="./assets/images/ico3.jpg" class="icon3 m-b-1">
                         <h5 class="heading-5 strong">Lo que te cuesta lo que te dicen y lo que no.</h5>
                         <p class="muted">
-                            Si crees que éxito es caro, pues el fracaso lo es mucho más, incluso aveces es más rentable fracasar que
+                            Si crees que éxito es caro, pues el fracaso lo es mucho más, incluso a veces es más rentable fracasar que
                             tener éxito.
                         </p>
                     </div>
@@ -154,7 +154,7 @@
                     <span class="uppercase stronger">DOMINANDO EL SISTEMA?</span>
                 </h2>
                 <p class="muted s-center m-b-4">
-                    Porque no solo compras solo un libro, compras una gran cantidad de beneficios quánticos y también la
+                    Porque no solo compras un libro, compras una gran cantidad de beneficios quanticos y también la
                     oportunidad de ser parte de una comunidad que obtiene resultados todos los días.
                 </p>
             </div>
@@ -192,7 +192,7 @@
                     <div class="ed-item s-100 m-50 l-70 s-cross-center">
                         <p class="muted">
                             <img src="./assets/images/check.jpg" class="check">
-                            Consigue que las finanzas apliquen a tu negocio, no importa que si es tradicional o innovador, el
+                            Consigue que las finanzas se apliquen a tu negocio, no importa si es tradicional o innovador, el
                             capital inicial es necesario para cualquier emprendimiento.
                         </p>
                     </div>
@@ -204,7 +204,7 @@
                     <div class="ed-item s-100 m-50 l-70 s-cross-center">
                         <p class="muted">
                             <img src="./assets/images/check.jpg" class="check">
-                            Únete a la comunidad quantico formada por miles de empresarios y emprendedores que no se conforman con
+                            Únete a la comunidad quantica formada por miles de empresarios y emprendedores que no se conforman con
                             las finanzas tradicionales y entre ellos logran
                         </p>
                     </div>
@@ -226,7 +226,7 @@
             </div>
             <div class="ed-item s-100 m-50 s-main-center s-cross-center">
                 <img src="./assets/images/name.png" alt="José Manuel Quantico" class="name m-b-3">
-                <p class="muted small strong text-center">“Me he dedicado los últimos años a enseñar a tener resultados a
+                <p class="muted small strong text-center">“Me he dedicado los últimos años a enseñar cómo tener resultados a
                     miles de
                     personas”</p>
                 <p class="muted small strong text-center">
@@ -277,7 +277,7 @@
                                     <div class="carrousel-item__quote">
                                         <p class="text-right">
                                             Las reglas no estan escritas, estas se escriben todos los días y en
-                                            la comunidad quántica lo sabemos.“
+                                            la comunidad quantica lo sabemos.“
                                         </p>
                                         <p class="text-right strong m-b-0">Daniel Álvarez</p>
                                         <p class="text-right strong m-b-0">Desarrollador</p>
@@ -296,7 +296,7 @@
                                     <div class="carrousel-item__quote">
                                         <p class="text-right">
                                             La creatividad empresarial no sirve de nada sin el capital de trabajo, por
-                                            eso nos apalancamos en el conocimiento quántico“
+                                            eso nos apalancamos en el conocimiento quantico“
                                         </p>
                                         <p class="text-right strong m-b-0">José Melendez</p>
                                         <p class="text-right strong m-b-0">Empresario</p>
@@ -349,7 +349,7 @@
             <div class="ed-item ed-container s-main-center m-b-3">
                 <div class="ed-item m-60">
                     <h2 class="heading-2 strong text-center">
-                        RECIBE MÁS DE S/. 7,000.00 EN CAPACITACIONES QUÁNTICAS
+                        RECIBE MÁS DE S/. 7,000.00 EN CAPACITACIONES QUANTICAS
                     </h2>
                 </div>
             </div>
