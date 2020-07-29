@@ -59,7 +59,7 @@ body {
 .nav .nav-item a {
   color: #fff;
 }
-/* .navbar.sticky { 
+/* .navbar.sticky {
   background-color: var(--black-color);
 }
 .nav {
@@ -557,4 +557,43 @@ p {
     background: rgba(0,0,0, .7);
     padding-top: 30px;
   }
+}
+.countdown {
+    --maxWidth: 350px;
+    --background-color: #000;
+    --gradient: linear-gradient(to right, #d3954d, #eedc96);
+    position: relative;
+    width: 100%;
+    max-width: var(--maxWidth);
+    display: flex;
+    justify-content: space-between;
+    background-image: var(--gradient);
+    top: 35vh;
+}
+.countdown::before {
+    --size: .25rem;
+    position: absolute;
+    content: "";
+    width: calc(var(--maxWidth) - var(--size) * 2);
+    height: calc(100% - var(--size) * 2);
+    margin: var(--size);
+    background-color: var(--background-color);
+}
+.countdown-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+.countdown-item {
+    width: 25%;
+    padding: 1rem;
+}
+.countdown-item__number {
+    text-align: center;
+    font-size: 2.25rem;
+}
+.countdown-item__text {
+    text-align: center;
+    font-size: .8rem;
 }

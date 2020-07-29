@@ -47,6 +47,28 @@
                 <h3 class="heading-3 full text-center stronger uppercase">Tu éxito no es</h3>
                 <h2 class="heading-2 full text-center stronger uppercase">Negociable</h2>
             </div>
+            <div class="ed-item ed-container s-100 s-main-center fromLeft-2">
+                <div class="countdown">
+                    <div class="countdown-container">
+                    <div class="countdown-item">
+                        <div class="countdown-item__number" id="days">09</div>
+                        <div class="countdown-item__text">Dias</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-item__number" id="hours">09</div>
+                        <div class="countdown-item__text">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-item__number" id="minutes">09</div>
+                        <div class="countdown-item__text">Minutos</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-item__number" id="seconds">09</div>
+                        <div class="countdown-item__text">Segundos</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -359,6 +381,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('assets/js/ed-grid.js') }}"></script>
+<script src="{{ asset('assets/js/countdown.js') }}"></script>
 <!--<script src="assets/js/token.js"></script>-->
 <script>
     edgrid.menu('main-nav','main-menu');
