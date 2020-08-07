@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,10 +25,10 @@
         <div class="ed-item s-100 nav-container s-main-end">
             <nav class="main-nav ed-nav l-top" id="main-nav">
                 <ul class="nav ed-menu l-horizontal button-bar" id="main-menu">
-                    <li class="nav-item"><a href="#">3 Razones</a></li>
-                    <li class="nav-item"><a href="#">Autor</a></li>
-                    <li class="nav-item"><a href="#">Comentarios</a></li>
-                    <li class="nav-item"><a href="#">Beneficios</a></li>
+                    <li class="nav-item"><a href="#razons" class="menu-link">3 Razones</a></li>
+                    <li class="nav-item"><a href="#author" class="menu-link">Autor</a></li>
+                    <li class="nav-item"><a href="#comments" class="menu-link">Comentarios</a></li>
+                    <li class="nav-item"><a href="#benefits" class="menu-link">Beneficios</a></li>
                     <li class="nav-item button-cta"><a href="#" id="buyButton">Comprar</a></li>
                 </ul>
             </nav>
@@ -50,22 +51,22 @@
             <div class="ed-item ed-container s-100 s-main-center fromLeft-2">
                 <div class="countdown">
                     <div class="countdown-container">
-                    <div class="countdown-item">
-                        <div class="countdown-item__number" id="days">09</div>
-                        <div class="countdown-item__text">Dias</div>
-                    </div>
-                    <div class="countdown-item">
-                        <div class="countdown-item__number" id="hours">09</div>
-                        <div class="countdown-item__text">Horas</div>
-                    </div>
-                    <div class="countdown-item">
-                        <div class="countdown-item__number" id="minutes">09</div>
-                        <div class="countdown-item__text">Minutos</div>
-                    </div>
-                    <div class="countdown-item">
-                        <div class="countdown-item__number" id="seconds">09</div>
-                        <div class="countdown-item__text">Segundos</div>
-                    </div>
+                        <div class="countdown-item">
+                            <div class="countdown-item__number" id="days">09</div>
+                            <div class="countdown-item__text">Dias</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-item__number" id="hours">09</div>
+                            <div class="countdown-item__text">Horas</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-item__number" id="minutes">09</div>
+                            <div class="countdown-item__text">Minutos</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-item__number" id="seconds">09</div>
+                            <div class="countdown-item__text">Segundos</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,7 +74,7 @@
     </div>
 </header>
 <main class="main">
-    <section class="section">
+    <section class="section" id="razons">
         <div class="ed-container">
             <div class="ed-item s-100 m-b-4">
                 <h2 class="heading-2 text-center m-0">
@@ -94,7 +95,7 @@
             <div class="ed-item s-100 l-1-3 m-b-4">
                 <div class="reasons">
                     <div class="reason s-to-center s-center">
-                        <img src="./assets/images/ico1.jpg" class="icon1 m-b-1">
+                        <img src="./assets/images/ico1.png" class="icon1 m-b-1">
                         <h5 class="heading-5 strong">Lo que te dijeron y te lo creíste.</h5>
                         <p class="muted">
                             El sistema educativo tradicional fue creado para que sigas las reglas, y para que seas un engranaje más del
@@ -106,7 +107,7 @@
             <div class="ed-item s-100 l-1-3 m-b-4">
                 <div class="reasons">
                     <div class="reason s-to-center s-center">
-                        <img src="./assets/images/ico2.jpg" class="icon2 m-b-1">
+                        <img src="./assets/images/ico2.png" class="icon2 m-b-1">
                         <h5 class="heading-5 strong">Lo que perdiste por lo que no te dijeron.</h5>
                         <p class="muted">
                             Hay cosas que el sistema educativo tradicional no te dice, que podrían hacer la diferencia entre el
@@ -119,7 +120,7 @@
             <div class="ed-item s-100 l-1-3 m-b-4">
                 <div class="reasons">
                     <div class="reason s-to-center s-center">
-                        <img src="./assets/images/ico3.jpg" class="icon3 m-b-1">
+                        <img src="./assets/images/ico3.png" class="icon3 m-b-1">
                         <h5 class="heading-5 strong">Lo que te cuesta lo que te dicen y lo que no.</h5>
                         <p class="muted">
                             Si crees que éxito es caro, pues el fracaso lo es mucho más, incluso a veces es más rentable fracasar que
@@ -212,7 +213,14 @@
             </div>
         </div>
     </section>
-    <section class="section author">
+    <section class="section">
+        <div class="ed-container">
+            <div class="ed-item s-100 s-center m-b-4">
+                <img src="{{ asset('assets/images/josemanuel.jpg') }}" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section author" id="author">
         <div class="ed-container">
             <div class="ed-item s-100 s-center m-b-4">
                 <h2 class="heading-2 text-center stronger">
@@ -236,7 +244,7 @@
             </div>
         </div>
     </section>
-    <section class="section community">
+    <section class="section community" id="comments">
         <div class="ed-container">
             <div class="ed-item s-100 m-b-4">
                 <h2 class="heading-2 strong text-center">Lo que dice la comunidad quantica</h2>
@@ -245,7 +253,7 @@
         <div class="ed-container">
             <div class="ed-item ed-container full m-t-2">
                 <div class="ed-item s-100">
-                    <div class="ed-container owl-carousel">
+                    <div class="ed-container testimonial owl-carousel">
                         <div class="carrousel-item">
                             <div class="ed-container">
                                 <div class="ed-item s-100 m-30">
@@ -329,22 +337,103 @@
         </div>
     </section>
     <section class="section mega-banner">
-        <img src="./assets/images/fondo2.jpg" alt="Mega Banner" style="width: 100%; !Important">
+        <div class="accordion-container">
+            <a href="#" class="accordion-titulo">Pago de membresia (Adelanto o cancelación) <span class="toggle-icon"></span></a>
+            <div class="accordion-content">
+                <div class="ed-container">
+                    @foreach ($mem as $m)
+                        <div class="ed-item s-100 l-1-3">
+                            <button class="btn-golden pay" data-price="{{ $m['ammount'] }}">{{ $m['label'] }}</button>
+                        </div>
+                    @endforeach
+                    {{-- <div class="ed-item s-100 l-1-3">
+                        <button class="btn-golden">S/. 2,500.00</button>
+                    </div>
+                    <div class="ed-item s-100 l-1-3">
+                        <button class="btn-golden">S/. 4,000.00</button>
+                    </div>
+                    <div class="ed-item s-100 l-1-3">
+                        <button class="btn-golden">S/. 5,000.00</button>
+                    </div>
+                    <div class="ed-item s-100 l-1-3">
+                        <button class="btn-golden">S/. 10,000.00</button>
+                    </div>
+                    <div class="ed-item s-100 l-1-3">
+                        <button class="btn-golden">S/. 15,000.00</button>
+                    </div>
+                    <div class="ed-item s-100 l-1-3">
+                        <button class="btn-golden">S/. 20,000.00</button>
+                    </div>
+                    <div class="ed-item s-100 l-1-3">
+                        <button class="btn-golden">S/. 25,000.00</button>
+                    </div> --}}
+                </div>
+            </div>  
+        </div>    
     </section>
     <section class="section">
         <div class="ed-container">
-            <div class="ed-item full m-b-3">
+            <div class="ed-item s-100 m-b-3">
                 <h2 class="heading-2 stronger text-center">GRATIS POR TU COMPRA</h2>
             </div>
-            <div class="ed-item full s-main-center s-cross-center m-b-3">
-                <img src="./assets/images/img2.jpg" alt="Gratis por tu compra">
+            <div class="ed-item s-100 s-main-center s-cross-center m-b-3">
+                <div class="purchase-carousel owl-carousel">
+                    <div class="item">
+                        <div class="after-purchase-header">
+                            <img src="{{ asset('assets/images/slider01.png') }}" alt="">
+                        </div>
+                        <div class="after-purchase-body">
+                            Libro Autografiado por Jose Manuel
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="after-purchase-header">
+                            <img src="{{ asset('assets/images/slider02.png') }}" alt="">
+                        </div>
+                        <div class="after-purchase-body">
+                            Tarjeta de presentación de Jose Manuel
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="after-purchase-header">
+                            <img src="{{ asset('assets/images/slider03.png') }}" alt="">
+                        </div>
+                        <div class="after-purchase-body">
+                            Caja Sólida Multifunción de alta gama
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="after-purchase-header">
+                            <img src="{{ asset('assets/images/slider04.png') }}" alt="">
+                        </div>
+                        <div class="after-purchase-body">
+                            Portatarjetero de cuero con imán
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="after-purchase-header">
+                            <img src="{{ asset('assets/images/slider05.png') }}" alt="">
+                        </div>
+                        <div class="after-purchase-body">
+                            Lapicero Quantico de alta gama
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="after-purchase-header">
+                            <img src="{{ asset('assets/images/slider06.png') }}" alt="">
+                        </div>
+                        <div class="after-purchase-body">
+                            Tarjeta La Mágica Quantico Black
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ed-item full">
+            <div class="ed-item s-100">
                 <h2 class="heading-2 stronger text-center">Y COMO SI ESTO FUERA POCO...</h2>
             </div>
         </div>
     </section>
-    <section class="section vip m-b-0">
+    <section class="section vip m-b-0" id="benefits">
         <div class="ed-container">
             <div class="ed-item ed-container s-main-center m-b-3">
                 <div class="ed-item m-60">
@@ -356,11 +445,11 @@
             <div class="ed-item">
                 <div class="vip-content">
                     <div class="ed-container">
-                        <div class="ed-item s-1-3"></div>
-                        <div class="ed-item s-1-3" onclick="pasarella()">
-                            <img src="./assets/images/vip.png" alt="Vip">
+                        <div class="ed-item s-100 vip-wrapper">
+                            <img src="{{ asset('assets/images/dibu01.png') }}" class="from-l" alt="">
+                            <img src="{{ asset('assets/images/dibu02.png') }}" class="to-l" alt="">
+                            <button class="btn-vip pay" data-price="{{$datos["amount"]}}">comprar</button>
                         </div>
-                        <div class="ed-item s-1-3"></div>
                     </div>
                 </div>
             </div>
@@ -378,11 +467,18 @@
 <script src="{{ asset('assets/js/countdown.js') }}"></script>
 <!--<script src="assets/js/token.js"></script>-->
 <script>
+    $(".menu-link").click(function(e) {
+        e.preventDefault();
+        let link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top
+        }, 700);
+    });
     edgrid.menu('main-nav','main-menu');
-    $('.owl-carousel').owlCarousel({
+    $('.testimonial.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         responsive:{
             0:{
                 items:1
@@ -395,6 +491,38 @@
             }
         }
     })
+    $('.purchase-carousel.owl-carousel').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+    $(".accordion-titulo").click(function(e){
+        e.preventDefault();
+		
+        var contenido=$(this).next(".accordion-content");
+                 
+        if(contenido.css("display")=="none"){ //open		
+           contenido.slideDown(250);			
+           $(this).addClass("open");
+        }
+        else{ //close		
+           contenido.slideUp(250);
+           $(this).removeClass("open");	
+       }
+                                 
+     });
 </script>
 <script>
     Culqi.publicKey = '{{$key_public}}';
@@ -409,6 +537,20 @@
         Culqi.open();
         //e.preventDefault();
     }
+
+    $('.pay').click(function(e) {
+        e.preventDefault();
+        let amount = $(this).data('price');
+
+        Culqi.settings({
+            title: '{{$datos["company"]}}',
+            currency: '{{$datos["currency"]}}',
+            description: '{{$datos["product"]}}',
+            amount: amount
+        });
+
+        Culqi.open();
+    });
 
     $('#buyButton').on('click', function(e) {
         // Abre el formulario con la configuración en Culqi.settings
@@ -466,8 +608,6 @@
             //alert(Culqi.error.user_message);
         }
     };
-
-
 </script>
 </body>
 
