@@ -39,10 +39,10 @@
 </navbar>
 <header class="header">
     <div class="ed-container fullheight s-cross-center">
-        <div class="ed-item l-50 from-l s-main-center wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+        <div class="ed-item l-50 from-l s-main-center " data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
             <img src="./assets/images/libro.jpg" class="header-book">
         </div>
-        <div class="ed-item s-100 l-50 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+        <div class="ed-item s-100 l-50 " data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
             <div class="ed-container ed-item s-main-center">
                 <div class="logo full s-main-center m-b-1">
                     <img src="./assets/images/logo1.png" alt="Logo" class="logo s-center">
