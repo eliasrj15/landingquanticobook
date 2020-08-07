@@ -498,15 +498,15 @@
             });
         });
     }
+    new WOW().init();
+    // var wow = new WOW({
+    //     boxClass: 'wow',
+    //     animateClass: 'animated',
+    //     mobile: false,
+    //     live: true
 
-    var wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        mobile: false,
-        live: true
-
-    });
-    wow.init();
+    // });
+    // wow.init();
 
     edgrid.menu('main-nav','main-menu');
     $('.testimonial.owl-carousel').owlCarousel({
