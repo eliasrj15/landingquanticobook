@@ -33,6 +33,13 @@ body {
 .header .heading-2 {
   font-size: 3.25rem;
 }
+
+@media (max-width: 400px) {
+  .header .heading-2 {
+    font-size: 2.8rem;
+  }
+}
+
 .header .header-book {
   position: relative;
   top: 13rem;
@@ -545,6 +552,22 @@ p {
     width: 25%;
     padding: 1rem;
 }
+
+@media (max-width: 400px) {
+  .countdown-item {
+      padding: .85rem;
+  }
+  .countdown::before {
+    --size: .25rem;
+    position: absolute;
+    content: "";
+    width: calc(328px - var(--size) * 2);
+    height: calc(100% - var(--size) * 2);
+    margin: var(--size);
+    background-color: var(--background-color);
+}
+}
+
 .countdown-item__number {
     text-align: center;
     font-size: 2.25rem;
