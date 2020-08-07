@@ -37,10 +37,10 @@
 </navbar>
 <header class="header">
     <div class="ed-container fullheight s-cross-center">
-        <div class="ed-item m-50 s-main-center">
+        <div class="ed-item l-50 from-l s-main-center">
             <img src="./assets/images/libro.jpg" class="header-book">
         </div>
-        <div class="ed-item m-50">
+        <div class="ed-item s-100 l-50">
             <div class="ed-container ed-item s-main-center">
                 <div class="logo full s-main-center m-b-1">
                     <img src="./assets/images/logo1.png" alt="Logo" class="logo s-center">
