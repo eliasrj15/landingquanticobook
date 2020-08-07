@@ -52,34 +52,36 @@ body {
   position: fixed;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   background: rgba(0,0,0, .7);
   z-index: 999;
 }
 .nav .nav-item a {
   color: #fff;
 }
-/* .navbar.sticky {
-  background-color: var(--black-color);
-}
-.nav {
-  display: inline-block;
-  list-style: none;
-}
 .nav .nav-item {
-  font-size: 0;
-  display: inline-block;
-  margin-left: .5rem;
+  position: relative;
+  margin-bottom: 10px;
 }
-.nav .nav-item a {
-  display: block;
-  margin: 0;
-  padding: .5rem 1.5rem;
-  text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
-  color: white;
-} */
+.nav .nav-item a:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 3px;
+  background: transparent;
+  content: '';
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.nav .nav-item.active a:before {
+  background-color: #FCD100;
+  width: 100%;
+}
 
 /* HEADER */
 header.header {

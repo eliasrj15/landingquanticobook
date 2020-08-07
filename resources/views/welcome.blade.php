@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 
-<body>
+<body class="body-scroll">
 <navbar class="navbar">
     <div class="ed-container">
         <div class="ed-item s-20 to-l nav-toggle-cont">
@@ -37,10 +38,10 @@
 </navbar>
 <header class="header">
     <div class="ed-container fullheight s-cross-center">
-        <div class="ed-item l-50 from-l s-main-center">
+        <div class="ed-item l-50 from-l s-main-center wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
             <img src="./assets/images/libro.jpg" class="header-book">
         </div>
-        <div class="ed-item s-100 l-50">
+        <div class="ed-item s-100 l-50 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
             <div class="ed-container ed-item s-main-center">
                 <div class="logo full s-main-center m-b-1">
                     <img src="./assets/images/logo1.png" alt="Logo" class="logo s-center">
@@ -74,8 +75,8 @@
     </div>
 </header>
 <main class="main">
-    <section class="section" id="razons">
-        <div class="ed-container">
+    <section class="section sectionT" id="razons">
+        <div class="ed-container wow fadeInUp"  data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
             <div class="ed-item s-100 m-b-4">
                 <h2 class="heading-2 text-center m-0">
                     <strong class="strong">3 RAZONES</strong>
@@ -91,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="ed-container">
+        <div class="ed-container wow fadeInUp"  data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
             <div class="ed-item s-100 l-1-3 m-b-4">
                 <div class="reasons">
                     <div class="reason s-to-center s-center">
@@ -133,10 +134,10 @@
     </section>
     <section class="section book">
         <div class="ed-container">
-            <div class="ed-item s-100 m-50 m-b-3">
+            <div class="ed-item s-100 m-50 m-b-3 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <img src="./assets/images/libro2.jpg" alt="" class="image">
             </div>
-            <div class="ed-item s-100 m-50 s-main-center s-cross-center">
+            <div class="ed-item s-100 m-50 s-main-center s-cross-center wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <h3 class="heading-3 m-b-2 text-center">DOMINANDO EL SISTEMA</h3>
                 <p class="text-center muted">
                     Es el inicio de tu gran aventura financiera, reúne los conceptos básicos para garantizar tus resultados y
@@ -148,7 +149,7 @@
     </section>
     <section class="section why">
         <div class="ed-container s-main-center">
-            <div class="ed-item s-100 m-b-4">
+            <div class="ed-item s-100 m-b-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <h2 class="heading-2 strong text-center m-b-3">
                     ¿Por qué comprar
                     <br>
@@ -161,8 +162,8 @@
             </div>
         </div>
         <div class="ed-container">
-            <div class="ed-item ed-container features">
-                <div class="ed-item ed-container feature m-b-2">
+            <div class="ed-item ed-container features wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                <div class="ed-item ed-container feature m-b-2 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
                         <img src="./assets/images/ico4.jpg" class="image">
                     </div>
@@ -174,7 +175,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="ed-item ed-container feature m-b-2">
+                <div class="ed-item ed-container feature m-b-2 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
                         <img src="./assets/images/ico5.jpg" class="image">
                     </div>
@@ -186,7 +187,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="ed-item ed-container feature m-b-2">
+                <div class="ed-item ed-container feature m-b-2 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
                         <img src="./assets/images/ico6.jpg" class="image">
                     </div>
@@ -198,7 +199,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="ed-item ed-container feature m-b-2">
+                <div class="ed-item ed-container feature m-b-2 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <div class="ed-item s-100 m-50 l-30 m-b-2 s-main-center s-cross-center">
                         <img src="./assets/images/ico7.jpg" class="image">
                     </div>
@@ -215,24 +216,24 @@
     </section>
     <section class="section">
         <div class="ed-container">
-            <div class="ed-item s-100 s-center m-b-4">
+            <div class="ed-item s-100 s-center m-b-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <img src="{{ asset('assets/images/josemanuel.jpg') }}" alt="">
             </div>
         </div>
     </section>
-    <section class="section author" id="author">
+    <section class="section author sectionT" id="author">
         <div class="ed-container">
-            <div class="ed-item s-100 s-center m-b-4">
+            <div class="ed-item s-100 s-center m-b-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <h2 class="heading-2 text-center stronger">
                     EL AUTOR QUANTICO
                 </h2>
             </div>
         </div>
         <div class="ed-container">
-            <div class="ed-item s-100 m-50 m-b-4">
+            <div class="ed-item s-100 m-50 m-b-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <img src="./assets/images/autor1.jpg" alt="Jose Manuel Quantico" class="image">
             </div>
-            <div class="ed-item s-100 m-50 s-main-center s-cross-center">
+            <div class="ed-item s-100 m-50 s-main-center s-cross-center wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <img src="./assets/images/name.png" alt="José Manuel Quantico" class="name m-b-3">
                 <p class="muted small strong text-center">“Me he dedicado los últimos años a enseñar cómo tener resultados a
                     miles de
@@ -244,15 +245,15 @@
             </div>
         </div>
     </section>
-    <section class="section community" id="comments">
+    <section class="section community sectionT" id="comments">
         <div class="ed-container">
-            <div class="ed-item s-100 m-b-4">
+            <div class="ed-item s-100 m-b-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <h2 class="heading-2 strong text-center">Lo que dice la comunidad quantica</h2>
             </div>
         </div>
         <div class="ed-container">
             <div class="ed-item ed-container full m-t-2">
-                <div class="ed-item s-100">
+                <div class="ed-item s-100 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <div class="ed-container testimonial owl-carousel">
                         <div class="carrousel-item">
                             <div class="ed-container">
@@ -337,7 +338,7 @@
         </div>
     </section>
     <section class="section mega-banner">
-        <div class="accordion-container">
+        <div class="accordion-container wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
             <a href="#" class="accordion-titulo">Pago de membresia (Adelanto o cancelación) <span class="toggle-icon"></span></a>
             <div class="accordion-content">
                 <div class="ed-container">
@@ -373,7 +374,7 @@
     </section>
     <section class="section">
         <div class="ed-container">
-            <div class="ed-item s-100 m-b-3">
+            <div class="ed-item s-100 m-b-3 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                 <h2 class="heading-2 stronger text-center">GRATIS POR TU COMPRA</h2>
             </div>
             <div class="ed-item s-100 s-main-center s-cross-center m-b-3">
@@ -433,10 +434,10 @@
             </div>
         </div>
     </section>
-    <section class="section vip m-b-0" id="benefits">
+    <section class="section vip m-b-0 sectionT" id="benefits">
         <div class="ed-container">
             <div class="ed-item ed-container s-main-center m-b-3">
-                <div class="ed-item m-60">
+                <div class="ed-item m-60 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <h2 class="heading-2 strong text-center">
                         RECIBE MÁS DE S/. 7,000.00 EN CAPACITACIONES QUANTICAS
                     </h2>
@@ -465,15 +466,48 @@
 <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('assets/js/ed-grid.js') }}"></script>
 <script src="{{ asset('assets/js/countdown.js') }}"></script>
-<!--<script src="assets/js/token.js"></script>-->
+<script src="{{ asset('assets/js/wow.js') }}"></script>
 <script>
     $(".menu-link").click(function(e) {
         e.preventDefault();
+
+        $(this).parent().addClass('active');
+
         let link = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(link).offset().top
         }, 700);
     });
+
+    var $section = $('section.sectionT'),
+        $bodyScroll = $('.body-scroll');
+    if ($bodyScroll.length > 0) {
+        $(window).on("scroll", function () {
+            $section.each(function () {
+                var sectionID = $(this).attr("id"),
+                    sectionTop = $(this).offset().top - 100,
+                    sectionHight = $(this).outerHeight(),
+                    wScroll = $(window).scrollTop(),
+                    $navHref = $("a[href='#" + sectionID + "']"),
+                    $nav = $('#main-menu').find($navHref).parent();
+                if (wScroll > sectionTop - 1 && wScroll < sectionTop + sectionHight - 1) {
+                    $nav.addClass('active');
+                    $nav.siblings().removeClass('active');
+                }
+            });
+        });
+    }
+
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 50,
+        mobile: false,
+        live: true
+
+    });
+    wow.init();
+
     edgrid.menu('main-nav','main-menu');
     $('.testimonial.owl-carousel').owlCarousel({
         loop:true,
