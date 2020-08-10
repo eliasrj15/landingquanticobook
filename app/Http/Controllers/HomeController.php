@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Requests;
+use App\Product;
 use Culqi\Culqi;
+use Illuminate\Http\Request;
 
 
 class HomeController extends Controller
@@ -12,41 +13,7 @@ class HomeController extends Controller
     public function index (){
 
         $key_public = "pk_live_37CG47QVwOQP8Pk9";
-        $membresia = [
-            [
-                'label' => 'S/. 1,500.00',
-                'ammount' => '150000'
-            ],
-            [
-                'label' => 'S/. 2,500.00',
-                'ammount' => '250000'
-            ],
-            [
-                'label' => 'S/. 4,000.00',
-                'ammount' => '400000'
-            ],
-            [
-                'label' => 'S/. 5,000.00',
-                'ammount' => '500000'
-            ],
-            [
-                'label' => 'S/. 10,000.00',
-                'ammount' => '1000000'
-            ],
-            [
-                'label' => 'S/. 15,000.00',
-                'ammount' => '1500000'
-            ],
-            [
-                'label' => 'S/. 20,000.00',
-                'ammount' => '2000000'
-            ],
-            [
-                'label' => 'S/. 25,000.00',
-                'ammount' => '2500000'
-            ],
-        ];
-        $mem = collect($membresia);
+        $mem = Product::get(['id', 'name','amount2']);
 
         $datos =[
             "company" =>"Mundo Quantico",
@@ -59,17 +26,33 @@ class HomeController extends Controller
 
     public function save_amount (Request $request){
         try {
-            //dd($request->token);
             Requests::register_autoloader();
             $SECRET_KEY = "sk_live_xeEHLNAvdPNu0Xgx";
+            // $SECRET_KEY = "sk_test_KJ4SzttFNT2HNrz7";
             $culqi = new Culqi(array('api_key' => $SECRET_KEY));
+
+            $amout = 0;
+            $desciption = '';
+
+            if ($request->pi == 99) {
+                $amout = 99900;
+                $desciption = 'Libro - Dominando el Sistema';
+            } else {
+                $product = Product::find($request->pi);
+                $amout = $product->amount2;
+                $desciption = 'Pago de Membresia';
+
+                if ($product == null) {
+                    return response()->json(9999999);
+                }
+            }
 
             $charge = $culqi->Charges->create(
                 array(
-                    "amount" => 99900,
+                    "amount" => $amout,
                     "capture" => true,
                     "currency_code" => "PEN",
-                    "description" => "Libro - Dominando el Sistema",
+                    "description" => $desciption,
                     "email" => $request->email,
                     "installments" => 0,
                     "antifraud_details" => array(
@@ -84,11 +67,9 @@ class HomeController extends Controller
                 )
             );
 
-            return $charge;
+            return response()->json($charge);
         }catch (\Exception $e){
             return $e->getMessage();
         }
-
-
     }
 }

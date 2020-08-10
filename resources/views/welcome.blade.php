@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/waitMe.min.css') }}">
 </head>
 
 <body class="body-scroll">
@@ -31,7 +32,7 @@
                     <li class="nav-item"><a href="#author" class="menu-link">Autor</a></li>
                     <li class="nav-item"><a href="#comments" class="menu-link">Comentarios</a></li>
                     <li class="nav-item"><a href="#benefits" class="menu-link">Beneficios</a></li>
-                    <li class="nav-item button-cta"><a href="#" id="buyButton">Comprar</a></li>
+                    <li class="nav-item button-cta"><a href="#" data-pi="99" data-price="99900" class="pay">Comprar</a></li>
                 </ul>
             </nav>
         </div>
@@ -345,30 +346,9 @@
                 <div class="ed-container">
                     @foreach ($mem as $m)
                         <div class="ed-item s-100 l-1-3">
-                            <button class="btn-golden pay" data-price="{{ $m['ammount'] }}">{{ $m['label'] }}</button>
+                            <button class="btn-golden pay" data-pi="{{ $m->id }}" data-price="{{ $m->amount2 }}">{{ $m->name }}</button>
                         </div>
                     @endforeach
-                    {{-- <div class="ed-item s-100 l-1-3">
-                        <button class="btn-golden">S/. 2,500.00</button>
-                    </div>
-                    <div class="ed-item s-100 l-1-3">
-                        <button class="btn-golden">S/. 4,000.00</button>
-                    </div>
-                    <div class="ed-item s-100 l-1-3">
-                        <button class="btn-golden">S/. 5,000.00</button>
-                    </div>
-                    <div class="ed-item s-100 l-1-3">
-                        <button class="btn-golden">S/. 10,000.00</button>
-                    </div>
-                    <div class="ed-item s-100 l-1-3">
-                        <button class="btn-golden">S/. 15,000.00</button>
-                    </div>
-                    <div class="ed-item s-100 l-1-3">
-                        <button class="btn-golden">S/. 20,000.00</button>
-                    </div>
-                    <div class="ed-item s-100 l-1-3">
-                        <button class="btn-golden">S/. 25,000.00</button>
-                    </div> --}}
                 </div>
             </div>  
         </div>    
@@ -450,7 +430,7 @@
                         <div class="ed-item s-100 vip-wrapper">
                             <img src="{{ asset('assets/images/dibu01.png') }}" class="from-l" alt="">
                             <img src="{{ asset('assets/images/dibu02.png') }}" class="to-l" alt="">
-                            <button class="btn-vip pay" data-price="{{$datos["amount"]}}">comprar</button>
+                            <button class="btn-vip pay" data-pi="99" data-price="99900" class="pay">comprar</button>
                         </div>
                     </div>
                 </div>
@@ -468,6 +448,9 @@
 <script src="{{ asset('assets/js/ed-grid.js') }}"></script>
 <script src="{{ asset('assets/js/countdown.js') }}"></script>
 <script src="{{ asset('assets/js/wow.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.1/dist/sweetalert2.all.min.js"></script>
+<script src="{{ asset('assets/js/waitMe.min.js') }}"></script>
+<script src="{{ asset('assets/js/token.js') }}"></script>
 <script>
     $(".menu-link").click(function(e) {
         e.preventDefault();
@@ -499,14 +482,6 @@
         });
     }
     new WOW().init();
-    // var wow = new WOW({
-    //     boxClass: 'wow',
-    //     animateClass: 'animated',
-    //     mobile: false,
-    //     live: true
-
-    // });
-    // wow.init();
 
     edgrid.menu('main-nav','main-menu');
     $('.testimonial.owl-carousel').owlCarousel({
@@ -558,91 +533,7 @@
                                  
      });
 </script>
-<script>
-    Culqi.publicKey = '{{$key_public}}';
-    Culqi.settings({
-        title: '{{$datos["company"]}}',
-        currency: '{{$datos["currency"]}}',
-        description: '{{$datos["product"]}}',
-        amount: '{{$datos["amount"]}}'
-    });
 
-    function pasarella(){
-        Culqi.open();
-        //e.preventDefault();
-    }
-
-    $('.pay').click(function(e) {
-        e.preventDefault();
-        let amount = $(this).data('price');
-
-        Culqi.settings({
-            title: '{{$datos["company"]}}',
-            currency: '{{$datos["currency"]}}',
-            description: '{{$datos["product"]}}',
-            amount: amount
-        });
-
-        Culqi.open();
-    });
-
-    $('#buyButton').on('click', function(e) {
-        // Abre el formulario con la configuración en Culqi.settings
-        Culqi.open();
-        e.preventDefault();
-    });
-
-    function culqi() {
-        if (Culqi.token) { // ¡Objeto Token creado exitosamente!
-            let token = Culqi.token.id;
-            //alert('Se ha creado un token:' + token);
-            //En esta linea de codigo debemos enviar el "Culqi.token.id"
-            //hacia tu servidor con Ajax
-
-            var form_data = new FormData();
-            form_data.append('token', token);
-            form_data.append('email', Culqi.token.email);
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            //console.log(Culqi.token)
-            /*let data = {
-                'token': token,
-                'email': Culqi.token.email
-            }*/
-
-            //console.log(data);
-            $.ajax({
-                url: '{{route('save_amount')}}',
-                type: 'post',
-                dataType: 'json',
-                processData: false, // important
-                contentType: false, // important
-                data: form_data,
-                'success': function(response) {
-                    //console.log(response);
-                    if (response.object =="error"){
-
-                        if (response.code ="card_declined"){
-                            //alert("errrror");
-                            toastr.error("La operación ha sido denegada por la entidad emisora de tu tarjeta. " +
-                                "Contáctate con el banco para conocer el motivo de la denegación o intenta nuevamente con otra tarjeta.");
-                        }
-                    }else{
-                        toastr.success("Operación exitosa");
-                    }
-                }
-            });
-
-        } else { // ¡Hubo algún problema!
-            // Mostramos JSON de objeto error en consola
-            console.log(Culqi.error);
-            //alert(Culqi.error.user_message);
-        }
-    };
-</script>
 </body>
 
 </html>
