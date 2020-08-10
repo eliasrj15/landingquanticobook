@@ -219,7 +219,7 @@
     <section class="section">
         <div class="ed-container">
             <div class="ed-item s-100 s-center m-b-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
-                <img src="{{ asset('assets/images/josemanuel.jpg') }}" alt="">
+                <img src="{{ asset('assets/images/dominando.jpg') }}" alt="">
             </div>
         </div>
     </section>
