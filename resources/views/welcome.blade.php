@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="{{ asset('assets/css/waitMe.min.css') }}">
 </head>
-
 <body class="body-scroll">
 <navbar class="navbar">
     <div class="ed-container">
