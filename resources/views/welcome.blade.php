@@ -144,7 +144,7 @@
                     Es el inicio de tu gran aventura financiera, reúne los conceptos básicos para garantizar tus resultados y
                     lograr rentabilidades increíbles.
                 </p>
-                <button class="button button-primary strong" onclick="pasarella()">Comprar</button>
+                <button class="button button-primary strong pay" data-pi="99" data-price="99900" class="pay">Comprar</button>
             </div>
         </div>
     </section>
@@ -349,8 +349,8 @@
                         </div>
                     @endforeach
                 </div>
-            </div>  
-        </div>    
+            </div>
+        </div>
     </section>
     <section class="section">
         <div class="ed-container">
@@ -518,18 +518,18 @@
     });
     $(".accordion-titulo").click(function(e){
         e.preventDefault();
-		
+
         var contenido=$(this).next(".accordion-content");
-                 
-        if(contenido.css("display")=="none"){ //open		
-           contenido.slideDown(250);			
+
+        if(contenido.css("display")=="none"){ //open
+           contenido.slideDown(250);
            $(this).addClass("open");
         }
-        else{ //close		
+        else{ //close
            contenido.slideUp(250);
-           $(this).removeClass("open");	
+           $(this).removeClass("open");
        }
-                                 
+
      });
 </script>
 
